@@ -3,7 +3,7 @@ path: blob/master/doc/
 
 # Transports
 
-Transports are located within `LibreNMS/Alert/Transport/` and can be configured within the WebUI under Alerts -> Alert Transports.
+Transports are located within `LibreNMS/alert-transports/` and can be configured within the WebUI under Alerts -> Alert Transports.
 
 Contacts will be gathered automatically and passed to the configured transports.
 By default the Contacts will be only gathered when the alert triggers and will ignore future changes in contacts for the incident.
@@ -453,7 +453,7 @@ Each fault will be sent as a separate syslog.
 5. You see a json code with the message you sent to the bot. Copy the Chat id. In this example that is “-9787468” within this example:
    `"message":{"message_id":7,"from":"id":656556,"first_name":"Joo","last_name":"Doo","username":"JohnDoo"},"chat":{"id":-9787468,"title":"Telegram Group"},"date":1435216924,"text":"Hi"}}]}`.
    
-6. Now create a new "Telegram transport" in LibreNMS (Global Settings -> Alerting Settings -> Telegram transport).
+6. Now create a new "Telegram transport" in LibreNMS (Alerts drop down > Alert Transports).
 Click on 'Add Telegram config' and put your chat id and token into the relevant box.
 
 7. If want to use a group to receive alerts, you need to pick the Chat ID of the group chat, and not of the Bot itself.
